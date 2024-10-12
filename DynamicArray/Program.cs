@@ -14,6 +14,13 @@
             while (isWorking)
             {
                 Console.Clear();
+
+                foreach (var number in numbers)
+                {
+                    Console.Write($"{number} ");
+                }
+
+                Console.WriteLine();
                 Console.WriteLine($"Введите число или {CommandSum}, для суммирования введённых ранее чисел.");
                 userInput = Console.ReadLine();
 
